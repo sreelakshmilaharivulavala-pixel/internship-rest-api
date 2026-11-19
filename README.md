@@ -1,37 +1,51 @@
-# Internship API
 
-A small Express API backed by SQLite.
+# Internship Management REST API
 
-## Setup
+## Project Description
+A REST API built using Node.js, Express.js and SQLite
+to manage internship records.
 
-Install dependencies:
+## Features
+- Create internship records
+- View all internships
+- View internship details
+- Update internship records
+- Delete internship records
+- Input validation
+- Pagination
+- Persistent database storage
 
-```sh
+## Technologies Used
+- Node.js
+- Express.js
+- SQLite
+- JavaScript
+- Visual Studio Code
+- GitHub
+
+## Installation
+
 npm install
-```
 
-## Run
+## Seed Database
 
-Start the API:
-
-```sh
-npm start
-```
-
-The server listens on port `3000` by default. Set the `PORT` environment
-variable to use another port.
-
-## Seed the database
-
-```sh
 npm run seed
-```
 
-The SQLite database is created at `database/internship.db` the first time the
-API or seed script runs. The seed script appends an example internship each
-time it runs.
+## Run Project
 
-## Endpoints
+npm run dev
 
-- `GET /health` — returns the API health status.
-- `GET /internships` — returns all internships.
+## API Endpoints
+
+GET /api/internships
+GET /api/internships/:id
+POST /api/internships
+PUT /api/internships/:id
+DELETE /api/internships/:id
+
+## API Base URL
+
+http://localhost:3000
+
+## Author
+Internship Task Project
